@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nearby Plant Store"
+        android:textStyle="bold"
+        android:padding="10sp"
+        android:textSize="22sp"
+        android:id="@+id/header"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/header"
+        android:layout_toEndOf="@+id/header"
+        android:padding="10sp"
+        android:text="provided by google"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/place_ryc"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:onClick="getLocation"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentBottom="true"
+        android:text="Click To Search"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="17sp"/>
+</RelativeLayout>

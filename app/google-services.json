@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "889504954677",
+    "firebase_url": "https://treestoreappsfinal.firebaseio.com",
+    "project_id": "treestoreappsfinal",
+    "storage_bucket": "treestoreappsfinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889504954677:android:e87676e0cabc469d",
+        "android_client_info": {
+          "package_name": "com.example.ironman.treestoreappsfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889504954677-3msnms8u75k8s4gvhvehviolrm4i1qkg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ironman.treestoreappsfinal",
+            "certificate_hash": "96f997f92be17ecf426836f06096be0da1227fda"
+          }
+        },
+        {
+          "client_id": "889504954677-2tld86na6r1kikager3e3m6n8ip8spkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLEAN8u0GnN6TKmgYppSZwT_FO6S80DEk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889504954677-2tld86na6r1kikager3e3m6n8ip8spkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

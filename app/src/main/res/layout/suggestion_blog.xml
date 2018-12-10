@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".blog.SuggestionBlog"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:id="@+id/blog_image"
+                android:foreground="@drawable/effect"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/header_text_view"
+                android:text="Head"
+                android:textSize="30sp"
+                android:padding="10sp"/>
+            <WebView
+                android:padding="10sp"
+                android:id="@+id/blog_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Loading" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="comments"
+                android:padding="10sp"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/back_black"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment_ryc"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/back_black"/>
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:hint="write comment"/>
+        <Button
+            android:onClick="addComment"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:text="comment"/>
+    </LinearLayout>
+
+</RelativeLayout>
