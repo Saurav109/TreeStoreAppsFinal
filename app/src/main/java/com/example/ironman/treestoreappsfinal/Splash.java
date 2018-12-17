@@ -12,8 +12,6 @@ public class Splash extends AppCompatActivity {
     Runnable runnable;
     SharedPreferences sharedPreferences;
 
-    //TreeStoreDatabase00@gmail.com
-    //treestore#*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
